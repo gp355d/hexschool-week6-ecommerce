@@ -3,3 +3,6 @@
 @import "./helper/variables";
 @import "../../../node_modules/bootstrap/scss/mixins";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+@import"./layout/header";
+@import"./content";
+@import"./banner";

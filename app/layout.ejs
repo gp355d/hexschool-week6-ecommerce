@@ -7,7 +7,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
@@ -15,8 +17,39 @@
   <header class="header">
     <div class="container">
       <div class="row">
-        <div class="col">12</div>
-        <div class="col">21</div>
+        <div class="col">
+          <h1 class="logo"><a href="#">Craftsman</a></h1>
+          <div class="row">
+            <div class="col slogn">
+              <div class="slogn-d-flex title ">
+                <h2 class="title">Enjoy Your Minimalist Lifestyle.</h2>
+                <p class="text">The best crafts in Taiwan. Get your free shipping on the first order.</p>
+                <a class="btn btn-success goshopping" href="#" role="button">Shop now</a>
+              </div>
+            </div>
+          </div> 
+        </div>
+        <div class="col bg">
+          <div class="row">
+            <div class="col">
+              <ul class="nav menu justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link href="#"><i class="material-icons shopping__icon">shopping_cart</i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
 
       </div>
     </div>
@@ -24,9 +57,9 @@
 
   <%- contents %>
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     footer
-  </footer>
+  </footer> -->
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
