@@ -1,24 +1,23 @@
 .logo{
-    // margin-bottom: 183px;
-    a{
         font-family: "Raleway",serif;
         font-size: 24px;
-    }
-    
 } 
-.slogn{
-    .title{
-       font-size: 48px;
-    //    margin-bottom: 24px;
-   }
-   .text{
-       font-size: 24px;
-       color:$text-color;
-    //    margin-bottom: 48px;
-   }
-   .goshopping{
-       padding: 19px 48px;
-   }
+.header{
+    .slogn{
+        width: 445px;
+        .title{
+            font-size: 48px;
+        //    margin-bottom: 24px;
+       }
+       .text{
+           font-size: 24px;
+           color:$text-color;
+        //    margin-bottom: 48px;
+       }
+       .goshopping{
+           padding: 19px 48px;
+       }
+    }
 }
 .bg{
     background-image: url(../images/index-1.jpg);

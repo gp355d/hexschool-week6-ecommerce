@@ -1,5 +1,13 @@
+.content{
+    padding: 72px 0;
+    .row{
+        margin-bottom: 32px;
+    }
+}
 .intro-text{
-    width: 350px;
+    .text{
+        width: 350px;
+    }
 }
 .banner{
     background-image: url(../images/index-5.jpg);
@@ -7,7 +15,7 @@
     background-position: center center;
     height: 490px;
 }
-.second-banner{
+.subscribe{
     background-image: url(../images/footer.jpg);
     background-size: cover;
     background-position: center center;
