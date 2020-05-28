@@ -3,10 +3,19 @@
     .row{
         margin-bottom: 32px;
     }
+    .row:last-child{
+        margin-bottom: 0;
+    }
 }
 .intro-text{
     .text{
         width: 350px;
+        color:#0000009A;
+        margin-bottom: 16px;
+    }
+    .link{
+        color:$green;
+        font-weight: bold;
     }
 }
 .banner{

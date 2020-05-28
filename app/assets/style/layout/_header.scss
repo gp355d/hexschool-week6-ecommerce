@@ -3,16 +3,19 @@
         font-size: 24px;
 } 
 .header{
-    .slogn{
+    .slogn-area{
         width: 445px;
+    }
+    .slogn{
         .title{
-            font-size: 48px;
-        //    margin-bottom: 24px;
+           color:#121212;
+           font-size: 48px;
+           margin-bottom: 24px;
        }
        .text{
            font-size: 24px;
            color:$text-color;
-        //    margin-bottom: 48px;
+           margin-bottom: 48px;
        }
        .goshopping{
            padding: 19px 48px;
@@ -24,8 +27,50 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 100vh;
+    // height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+.banner-top{
+    position: relative;
 }
 .menu a{
     color: #ffffff;
+}
+.slider{
+    padding: 72px 0;
+    .card{
+        width: 100%;
+        border: 0;
+        .mark{
+            background-color: $transparent;
+            color:#fff;
+            position: absolute;
+            top: 16px;
+            right: 16px;
+        }
+    }
+    .card-img-top{
+        width: 360px;
+        height: 350px;
+        margin-bottom: 8px;
+    }
+    .card-img-top:first-child{
+        position: relative;
+        width: 100%;
+    }
+    .card-body{
+        padding: 0;
+        .price{
+            margin-right: 8px;
+        }
+        .card-title{
+            margin-bottom: 4px;
+        }
+        .discount-price{
+            color: #00000062;
+            text-decoration:line-through;
+        }
+    }
 }
