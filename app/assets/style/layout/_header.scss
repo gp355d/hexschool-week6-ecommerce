@@ -1,27 +1,51 @@
 .logo{
         font-family: "Raleway",serif;
         font-size: 24px;
-} 
-.header{
-    .slogn-area{
-        width: 445px;
+        color: #000;
+    } 
+.navbar-light .navbar-brand{
+    @include pad{
+        color:#ffffff;
     }
+
+}
+.navbar-toggler{
+    i{
+        @include pad{
+            color: #ffffff;
+        }
+
+    }
+}
+.slogn-area{
+        max-width: 445px;
+    
     .slogn{
         .title{
            color:#121212;
            font-size: 48px;
            margin-bottom: 24px;
+           @include pad{
+            color: #ffffff;
+        }
        }
        .text{
            font-size: 24px;
            color:$text-color;
            margin-bottom: 48px;
+           @include pad{
+            color: #9E9E9E;
+           }
        }
        .goshopping{
            padding: 19px 48px;
+           @include mobile{
+               display: block;
+           }
        }
     }
 }
+
 .bg{
     background-image: url(../images/index-1.jpg);
     background-repeat: no-repeat;
@@ -34,14 +58,30 @@
 }
 .banner-top{
     position: relative;
+    top: -60px;
+    z-index: 1;
+    margin-bottom: -61px;
 }
-.menu a{
+
+.navbar-light .navbar-nav .nav-link {
     color: #ffffff;
 }
+
+.menu{
+    li{
+        margin-right: 48px;
+    }
+    // li:last-child {
+    //     margin-right: 0;
+    //   }
+}
+
 .slider{
     padding: 72px 0;
+    @include mobile{
+        padding: 48px 0;
+    }
     .card{
-        width: 100%;
         border: 0;
         .mark{
             background-color: $transparent;
@@ -52,13 +92,13 @@
         }
     }
     .card-img-top{
-        width: 360px;
         height: 350px;
         margin-bottom: 8px;
     }
+
     .card-img-top:first-child{
         position: relative;
-        width: 100%;
+        // max-width: 100%;
     }
     .card-body{
         padding: 0;

@@ -8,8 +8,11 @@
     }
 }
 .intro-text{
+    .title{
+        font-size: 24px;
+    }
     .text{
-        width: 350px;
+        max-width: 350px;
         color:#0000009A;
         margin-bottom: 16px;
     }
@@ -32,9 +35,12 @@
 }
 .subscrible-area{
     .title{
-        width: 445px;
+        max-width: 445px;
         font-size: 48px;
         margin-bottom: 48px;
         color: #ffffff;
+        @include mobile{
+            font-size: 32px;
+        }
     }
 }
