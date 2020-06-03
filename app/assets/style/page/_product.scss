@@ -1,29 +1,41 @@
 
 /*產品介紹頁面開始*/
 /*產品介紹頁面上方menu*/
-
-
-// .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-//     color: $green;
-//     font-weight: bold;
-// }
-// .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-//     color: $green;
-// }
-
-.navbar{
-        background-color: #FFFFFF00;
+.navbar-color{
+    background-color: #FFFFFF00;
+    .navbar-color:hover{
+        @include pad{
+            color:$black;
+        }
+        @include mobile{
+            color:$black;
+        }
+    }
+    .navbar-brand-color{
+        color: $black;
+    }
+    .navbar-brand-color:hover{
+        color: $black;
+    }
         .menu-color {
-            .ink-success{
-                .nav-link{
-                    color: #000;
-                    // font-weight: bold;
-                }
-                .nav-link:hover{
-                    color:$green;
-                    // font-weight: bold;
+                .link-success{
+                    .nav-link{
+                        color: $black;
+                        // font-weight: bold;
+                    }
+                    .nav-link:hover{
+                        color:$green;
+                        // font-weight: bold;
+                    }
                 }
             }
+        .navbar-toggler-color{
+            i{
+                color: $black;
+            }
+        }
+        .nav-link-color{
+            color: $black;
         }
     }
 /*產品類別menu*/
@@ -34,7 +46,7 @@
                 // font-weight: 700;
                 a{
                     font-size: 24px;
-                    color: #0000009a;
+                    color: $text-color;
                     @include mobile{
                         font-size: 16px;
                     }
@@ -83,7 +95,7 @@
 
             .mark{
                         background-color: $transparent;
-                        color:#fff;
+                        color:$white;
                         position: absolute;
                         top: 16px;
                         right: 16px;

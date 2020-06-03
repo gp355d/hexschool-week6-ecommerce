@@ -4,17 +4,15 @@
 
 .slogn{
     .title{
-       color:#121212;
+       color:$black;
        font-size: 48px;
-       margin-bottom: 24px;
        @include pad{
-        color: #ffffff;
+        color: $white;
     }
    }
    .text{
        font-size: 24px;
        color:$text-color;
-       margin-bottom: 48px;
        @include pad{
         color: #9E9E9E;
        }
@@ -54,13 +52,18 @@ margin-bottom: -61px;
         margin-bottom: 0;
     }
     .intro-text{
+        @include pad{
+            padding: 16px 0 24px 0;
+        }
+        @include mobile{
+            width: 100%;
+        }
         .title{
             font-size: 24px;
         }
         .text{
             max-width: 350px;
-            color:#0000009A;
-            margin-bottom: 16px;
+            color:$text-color;
         }
         .link{
             color:$green;
@@ -78,19 +81,29 @@ margin-bottom: -61px;
     .slogn{
         .title{
             max-width: 350px;
-            color: #ffffff;
+            color: $white;
             font-size: 32px;
         }
         .author-intro{
             .occupation{
                 color:#FFFFFF99;
+                margin-bottom: 4px;
+                @include mobile{
+                    font-size: 16px;
+                }
             }
             .name{
-                color: #ffffff;
+                color: $white;
+                @include mobile{
+                    font-size: 24px;
+                }
             }
             .link{
                 color:$green;
                 margin-right: 23px;
+                @include mobile{
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -107,8 +120,7 @@ margin-bottom: -61px;
     .title{
         max-width: 445px;
         font-size: 48px;
-        margin-bottom: 48px;
-        color: #ffffff;
+        color: $white;
         @include mobile{
             font-size: 32px;
         }
@@ -121,7 +133,7 @@ margin-bottom: -61px;
     //     padding-right: 59px;
     // }
     .btn{
-        padding: 20px 44px 17px 44px;
+        padding: 15px 44px 17px 44px;
     }
 }
 /*首頁訂閱區塊結束*/
@@ -135,7 +147,7 @@ margin-bottom: -61px;
         border: 0;
         .mark{
             background-color: $transparent;
-            color:#fff;
+            color:$white;
             position: absolute;
             top: 16px;
             right: 16px;
@@ -157,6 +169,7 @@ margin-bottom: -61px;
         }
         .card-title{
             margin-bottom: 4px;
+            font-weight: bold;
         }
         .discount-price{
             color: #00000062;

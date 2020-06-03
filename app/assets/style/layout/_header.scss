@@ -6,24 +6,24 @@
 .navbar{
     .navbar-brand{
         @include pad{
-            color:#ffffff;
+            color:$white;
         }
         @include mobile{
-            color:#ffffff;
+            color:$white;
         }
     }
     .navbar-brand:hover{
         @include pad{
-            color:#ffffff;
+            color:$white;
         }
         @include mobile{
-            color:#ffffff;
+            color:$white;
         }
     }
 
 
     .nav-link {
-        color: #ffffff;
+        color: $white;
     }
     .nav-link:hover {
         color:$green;
@@ -31,7 +31,7 @@
     .navbar-toggler{
         i{
             @include pad{
-                color: #ffffff;
+                color: $white;
             }
     
         }
@@ -43,7 +43,7 @@
     .navbar-collapse{
         .menu{
             .nav-link {
-                color: #ffffff;
+                color: $white;
             }
             .nav-link:hover {
                 color:$green;
@@ -53,13 +53,6 @@
 
 
 }
-
-.menu{
-        li{
-            margin-right: 48px;
-        }
-    
-    }
 
 /*首頁menu結束*/
 

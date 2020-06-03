@@ -1,34 +1,22 @@
+
+/*footer區塊開始*/
 .footer{
-    background-color: #121212;
+    background-color: $black;
     padding: 32px 0;
     @include mobile{
         padding: 24px 0;
     }
 }
-// .copyright{
-//     .logo{
-//         .link{
-//             font-size: 24px;
-//             color: #ffffff;
-//             margin-bottom: 0;
-//             margin-right: 16px;
-            
-//         }
-//     }
-//     .title{
-//         font-size: 14px;
-//         color: #FFFFFF99;
-//     }
-// }
+/*版權宣告區塊*/
 .copyright-area{
         .logo{
+            margin-bottom: 0;
             @include mobile{
                 margin-bottom: 48px;
             }
             .link{
-
                 font-size: 24px;
-                color: #ffffff;
+                color: $white;
                 margin-bottom: 0;
                 margin-right: 16px;
             }
@@ -47,13 +35,18 @@
             margin-bottom: 48px;
         }
         li{
-            color: #FFFFFFDE;
-            font-size: 14px;
-            margin-right: 48px;
+            a{
+                color: #FFFFFFDE;
+                font-size: 14px;
+            }
+            a:hover{
+                color: $green;
+            }
+            
             @include mobile{
                 margin-bottom: 16px;
             }
         }
     }
 }
-
+/*footer區塊結束*/

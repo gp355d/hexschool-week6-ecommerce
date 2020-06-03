@@ -5,8 +5,9 @@
 
 // Color system
 
-$white:    #fff !default;
-$transparent: transparent !default;
+$white:    #ffffff !default;//新增白色變數
+$text-color:#0000009A!default;//預設text-color
+$transparent: transparent !default;//新增透明色彩變數
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -17,8 +18,6 @@ $gray-600: #6c757d !default;
 $gray-700: #FFFFFF99 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
-$text-color:#0000009A;
 
 $grays: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
