@@ -1719,7 +1719,7 @@ pre {
   border-color: #454d55; }
 
 .table .thead-light th {
-  color: #FFFFFF99;
+  color: #00000098;
   background-color: #e9ecef;
   border-color: #dee2e6; }
 
@@ -1790,7 +1790,7 @@ pre {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #FFFFFF99;
+  color: #00000098;
   background-color: transparent;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1810,9 +1810,9 @@ pre {
     border: 0; }
   .form-control:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #FFFFFF99; }
+    text-shadow: 0 0 0 #00000098; }
   .form-control:focus {
-    color: #FFFFFF99;
+    color: #00000098;
     background-color: transparent;
     border-color: #80bdff;
     outline: 0;
@@ -1846,7 +1846,7 @@ input[type="month"].form-control {
           appearance: none; }
 
 select.form-control:focus::-ms-value {
-  color: #FFFFFF99;
+  color: #00000098;
   background-color: transparent; }
 
 .form-control-file,
@@ -3179,7 +3179,7 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #FFFFFF99;
+  color: #00000098;
   text-align: center;
   white-space: nowrap;
   background-color: #e9ecef;
@@ -3371,7 +3371,7 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #FFFFFF99;
+  color: #00000098;
   vertical-align: middle;
   background: transparent url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
   border: 1px solid #ced4da;
@@ -3385,7 +3385,7 @@ input[type="button"].btn-block {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
             box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
     .custom-select:focus::-ms-value {
-      color: #FFFFFF99;
+      color: #00000098;
       background-color: transparent; }
   .custom-select[multiple], .custom-select[size]:not([size="1"]) {
     height: auto;
@@ -3398,7 +3398,7 @@ input[type="button"].btn-block {
     display: none; }
   .custom-select:-moz-focusring {
     color: transparent;
-    text-shadow: 0 0 0 #FFFFFF99; }
+    text-shadow: 0 0 0 #00000098; }
 
 .custom-select-sm {
   height: calc(1.5em + 0.5rem + 2px);
@@ -3450,7 +3450,7 @@ input[type="button"].btn-block {
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #FFFFFF99;
+  color: #00000098;
   background-color: transparent;
   border: 1px solid #ced4da;
   border-radius: 0.25rem; }
@@ -3464,7 +3464,7 @@ input[type="button"].btn-block {
     height: calc(1.5em + 0.75rem);
     padding: 0.375rem 0.75rem;
     line-height: 1.5;
-    color: #FFFFFF99;
+    color: #00000098;
     content: "Browse";
     background-color: #e9ecef;
     border-left: inherit;
@@ -3636,7 +3636,7 @@ input[type="button"].btn-block {
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #FFFFFF99;
+    color: #00000098;
     background-color: #ffffff;
     border-color: #dee2e6 #dee2e6 #ffffff; }
   .nav-tabs .dropdown-menu {
@@ -4655,11 +4655,11 @@ input[type="button"].btn-block {
 
 .list-group-item-action {
   width: 100%;
-  color: #FFFFFF99;
+  color: #00000098;
   text-align: inherit; }
   .list-group-item-action:hover, .list-group-item-action:focus {
     z-index: 1;
-    color: #FFFFFF99;
+    color: #00000098;
     text-decoration: none;
     background-color: #f8f9fa; }
   .list-group-item-action:active {
@@ -8509,6 +8509,15 @@ a.text-black:hover, a.text-black:focus {
 .navbar .navbar-collapse .menu .nav-link:hover {
   color: #0E8A00; }
 
+.bg-end {
+  background-image: url(../images/done.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0; }
+
 /*首頁menu結束*/
 /*首頁上方背景區塊開始*/
 .slogn-area {
@@ -8792,6 +8801,7 @@ a.text-black:hover, a.text-black:focus {
 .productintro {
   position: relative; }
   .productintro .product-img {
+    position: relative;
     margin-bottom: 48px; }
   .productintro .mark {
     position: absolute;
@@ -8811,20 +8821,94 @@ a.text-black:hover, a.text-black:focus {
   padding-bottom: 32px;
   position: absolute;
   z-index: 2;
-  right: 25%;
-  top: 35%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-23%);
+      -ms-transform: translateY(-23%);
+          transform: translateY(-23%);
   background-color: #fff; }
   .cart .title {
     font-size: 48px; }
   .cart .pricearea .discount {
     font-size: 24px; }
+  @media (max-width: 576px) {
+    .cart {
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%); } }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .cart {
+    top: 87%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .productintro .product-img {
+    margin-bottom: 190px; } }
 
 .add {
   margin-right: 24px; }
   .add .number {
     padding: 0 25px; }
 
+/*產品詳細資訊*/
+.addtocart {
+  padding: 18px 93px; }
+  @media (max-width: 576px) {
+    .addtocart {
+      padding: 15px 53px; } }
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .addtocart {
+    padding: 15px 53px;
+    font-size: 14px; } }
+
+/*產品詳細資訊*/
 /*產品詳細頁面結束*/
+/*結帳頁面開始*/
+/*進度條區塊開始*/
+.progressbar li::after {
+  content: '>'; }
+
+.progressbar li:last-child::after {
+  content: ' '; }
+
+.footer-checkoout {
+  background-color: #ffffff; }
+
+.copyright-footer-area {
+  color: #0000009A; }
+
+.link-color {
+  color: #0E8A00; }
+
+.link-color:hover {
+  color: #0E8A00; }
+
+/*購物清單*/
+.shoppinglist {
+  padding: 32px;
+  background-color: #F2F2F2; }
+
+.list {
+  margin-bottom: 16px; }
+  .list .shopitem {
+    width: 48px;
+    height: 48px;
+    margin-right: 16px; }
+  .list .shoptitle {
+    margin-right: 50px; }
+
+.line {
+  margin: 0;
+  margin-bottom: 16px;
+  height: 1px; }
+
+.totallist {
+  font-weight: bold; }
+
+/*進度條區塊結束*/
+/*結帳頁面結束*/
 /*footer區塊開始*/
 .footer {
   background-color: #121212;
