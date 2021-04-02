@@ -53,7 +53,15 @@
 
 
 }
-
+.bg-end{
+    background-image: url(../images/done.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
 /*首頁menu結束*/
 
 

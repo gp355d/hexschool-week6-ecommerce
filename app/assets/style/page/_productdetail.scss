@@ -11,6 +11,7 @@
 .productintro{
     position: relative;
     .product-img{
+        position: relative;
         margin-bottom: 48px;
     }
     .mark{
@@ -37,8 +38,9 @@
     padding-bottom: 32px;
     position: absolute;
     z-index: 2;
-    right: 25%;
-    top:35%;
+    top:50%;
+    left:50%;
+    transform: translateY(-23%);
     background-color: #fff;
 
     .title{
@@ -49,6 +51,22 @@
             font-size: 24px;
         }
     }
+
+    @include mobile{
+        transform: translateY(-50%);
+    }
+}
+@media (min-width:768px) and (max-width:1000px){
+    .cart{
+        top:87%;
+        transform: translateY(-50%);
+    }
+    .productintro{
+        .product-img{
+            margin-bottom: 190px;
+        }
+
+    }
 }
 .add{
     margin-right: 24px;
@@ -56,4 +74,20 @@
         padding: 0 25px;
     }
 }
+
+/*產品詳細資訊*/
+.addtocart{
+    padding: 18px 93px;
+    @include mobile{
+        padding: 15px 53px;
+    }
+}
+@media (min-width:768px) and (max-width:1000px){
+    .addtocart{
+        padding: 15px 53px;
+        font-size: 14px;
+    }
+
+}
+/*產品詳細資訊*/
 /*產品詳細頁面結束*/

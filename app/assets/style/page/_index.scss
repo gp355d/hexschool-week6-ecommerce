@@ -140,7 +140,7 @@ margin-bottom: -61px;
 /*首頁slider區塊開始*/
 .slider{
     padding: 72px 0;
-    @include mobile{
+    @include pad{
         padding: 48px 0;
     }
     .card{
@@ -156,6 +156,10 @@ margin-bottom: -61px;
     .card-img-top{
         height: 350px;
         margin-bottom: 8px;
+        @include pad{
+            width: 240px;
+            height: 240px;
+        }
     }
 
     .card-img-top:first-child{
@@ -175,6 +179,10 @@ margin-bottom: -61px;
             color: #00000062;
             text-decoration:line-through;
         }
+    }
+    .swiper-container{
+        max-width: 1110px;
+        max-height: 409px;
     }
 }
 /*首頁slider區塊結束*/

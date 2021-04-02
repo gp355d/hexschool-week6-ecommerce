@@ -1,0 +1,60 @@
+
+/*結帳頁面開始*/
+
+/*進度條區塊開始*/
+.progressbar li::after{
+    content: '>';
+
+}
+.progressbar li:last-child::after{
+    content: ' ';
+}
+
+.footer-checkoout{
+    background-color: #ffffff;
+
+}
+.copyright-footer-area{
+    color:#0000009A;
+}
+.link-color{
+    color:#0E8A00;
+}
+.link-color:hover{
+    color:#0E8A00;
+}
+/*購物清單*/
+.shoppinglist{
+    padding: 32px;
+    background-color: #F2F2F2;
+}
+.list{
+    margin-bottom: 16px;
+    .shopitem{
+        width: 48px;
+        height: 48px;
+        margin-right: 16px;
+    }
+    .shoptitle{
+        margin-right: 50px;
+            }
+
+}
+.line{
+    // width: 286px;
+    margin: 0;
+    margin-bottom: 16px;
+    height: 1px;
+
+}
+.totallist{
+    font-weight: bold;
+}
+// .list:nth-child(2){
+//     border-bottom: 2px solid #00000060;
+// }
+
+
+/*進度條區塊結束*/
+/*結帳頁面結束*/
+// div-list div:not(:last-child
